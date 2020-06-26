@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication1", "PythonApplication1\PythonApplication1.pyproj", "{F007D78F-1B07-40CA-A390-7623B38DA958}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arduino-Mega-2560-Test", "Arduino-Mega-2560-Test\Arduino-Mega-2560-Test.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "I2C-device-Searching", "I2C-device-Searching\I2C-device-Searching.vcxproj", "{30A8E4B0-EDCB-45EB-98C5-4EFFEC71A78A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1602TestProgram", "1602TestProgram\1602TestProgram.vcxproj", "{E30A2989-7C6D-4304-9178-801C38309C75}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SerialReadingExample", "SerialReadingExample\SerialReadingExample.vcxproj", "{5E3DA621-3C82-48C9-8DFE-09AF98C91684}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Autofiberwinder", "..\..\..\Documents\Arduino\FiberWindingMachine\OldWindingProgram\Autofiberwinder\Autofiberwinder.vcxproj", "{24A6DDA6-2D09-478D-BD6E-34CF85510C1A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Blink1", "Blink1\Blink1.vcxproj", "{0CD30399-9CBD-41AF-97D8-468A2A432DDF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{C89237AD-11A8-47C6-88C1-4B7E3F56F7A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F007D78F-1B07-40CA-A390-7623B38DA958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F007D78F-1B07-40CA-A390-7623B38DA958}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F007D78F-1B07-40CA-A390-7623B38DA958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F007D78F-1B07-40CA-A390-7623B38DA958}.Release|x86.ActiveCfg = Release|Any CPU
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|Any CPU.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.Build.0 = Release|Win32
+		{30A8E4B0-EDCB-45EB-98C5-4EFFEC71A78A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{30A8E4B0-EDCB-45EB-98C5-4EFFEC71A78A}.Debug|x86.ActiveCfg = Debug|Win32
+		{30A8E4B0-EDCB-45EB-98C5-4EFFEC71A78A}.Debug|x86.Build.0 = Debug|Win32
+		{30A8E4B0-EDCB-45EB-98C5-4EFFEC71A78A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{30A8E4B0-EDCB-45EB-98C5-4EFFEC71A78A}.Release|x86.ActiveCfg = Release|Win32
+		{30A8E4B0-EDCB-45EB-98C5-4EFFEC71A78A}.Release|x86.Build.0 = Release|Win32
+		{E30A2989-7C6D-4304-9178-801C38309C75}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{E30A2989-7C6D-4304-9178-801C38309C75}.Debug|x86.ActiveCfg = Debug|Win32
+		{E30A2989-7C6D-4304-9178-801C38309C75}.Debug|x86.Build.0 = Debug|Win32
+		{E30A2989-7C6D-4304-9178-801C38309C75}.Release|Any CPU.ActiveCfg = Release|Win32
+		{E30A2989-7C6D-4304-9178-801C38309C75}.Release|x86.ActiveCfg = Release|Win32
+		{E30A2989-7C6D-4304-9178-801C38309C75}.Release|x86.Build.0 = Release|Win32
+		{5E3DA621-3C82-48C9-8DFE-09AF98C91684}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{5E3DA621-3C82-48C9-8DFE-09AF98C91684}.Debug|x86.ActiveCfg = Debug|Win32
+		{5E3DA621-3C82-48C9-8DFE-09AF98C91684}.Debug|x86.Build.0 = Debug|Win32
+		{5E3DA621-3C82-48C9-8DFE-09AF98C91684}.Release|Any CPU.ActiveCfg = Release|Win32
+		{5E3DA621-3C82-48C9-8DFE-09AF98C91684}.Release|x86.ActiveCfg = Release|Win32
+		{5E3DA621-3C82-48C9-8DFE-09AF98C91684}.Release|x86.Build.0 = Release|Win32
+		{24A6DDA6-2D09-478D-BD6E-34CF85510C1A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{24A6DDA6-2D09-478D-BD6E-34CF85510C1A}.Debug|x86.ActiveCfg = Debug|Win32
+		{24A6DDA6-2D09-478D-BD6E-34CF85510C1A}.Debug|x86.Build.0 = Debug|Win32
+		{24A6DDA6-2D09-478D-BD6E-34CF85510C1A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{24A6DDA6-2D09-478D-BD6E-34CF85510C1A}.Release|x86.ActiveCfg = Release|Win32
+		{24A6DDA6-2D09-478D-BD6E-34CF85510C1A}.Release|x86.Build.0 = Release|Win32
+		{0CD30399-9CBD-41AF-97D8-468A2A432DDF}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{0CD30399-9CBD-41AF-97D8-468A2A432DDF}.Debug|x86.ActiveCfg = Debug|Win32
+		{0CD30399-9CBD-41AF-97D8-468A2A432DDF}.Debug|x86.Build.0 = Debug|Win32
+		{0CD30399-9CBD-41AF-97D8-468A2A432DDF}.Release|Any CPU.ActiveCfg = Release|Win32
+		{0CD30399-9CBD-41AF-97D8-468A2A432DDF}.Release|x86.ActiveCfg = Release|Win32
+		{0CD30399-9CBD-41AF-97D8-468A2A432DDF}.Release|x86.Build.0 = Release|Win32
+		{C89237AD-11A8-47C6-88C1-4B7E3F56F7A0}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{C89237AD-11A8-47C6-88C1-4B7E3F56F7A0}.Debug|x86.ActiveCfg = Debug|Win32
+		{C89237AD-11A8-47C6-88C1-4B7E3F56F7A0}.Debug|x86.Build.0 = Debug|Win32
+		{C89237AD-11A8-47C6-88C1-4B7E3F56F7A0}.Release|Any CPU.ActiveCfg = Release|Win32
+		{C89237AD-11A8-47C6-88C1-4B7E3F56F7A0}.Release|x86.ActiveCfg = Release|Win32
+		{C89237AD-11A8-47C6-88C1-4B7E3F56F7A0}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62946929-0237-47E7-B2F4-8053DCA1F8D6}
+	EndGlobalSection
+EndGlobal
