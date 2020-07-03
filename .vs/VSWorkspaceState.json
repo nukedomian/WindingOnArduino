@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Arduino-Mega-2560-Test",
+    "\\Blink1"
   ],
+  "SelectedNode": "\\Arduino-Mega-2560-Test\\StepperControl.cpp",
   "PreviewInSolutionExplorer": false
 }

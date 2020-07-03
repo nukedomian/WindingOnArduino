@@ -75,14 +75,15 @@ void setup()
 //	InterruptPins
 	DDRE |= (1 << DDE4) | (1 << DDE5);
 	EICRB |= (1 << ISC51) | (1 << ISC41);
-	EICRB &= ~((1 << ISC50) | (1 << ISC40));
+	EICRB |= (1 << ISC50) | (1 << ISC40);
+//	EICRB &= ~((1 << ISC50) | (1 << ISC40));
 	EIMSK |= (1 << INT5) | (1 << INT4);
 	Serial.begin(115200);
 
 //	digitalWrite(pin_Stepper1_DIR,HIGH);
 //	digitalWrite(pin_Stepper2_DIR,LOW);
 
-
+	FindZero();
 
 	Timer_3.disable();
 	lcd.init();
@@ -114,7 +115,7 @@ void linearMoveTo(double tgtX,double tgtY, double time) {
 	//lcd.print(tgtX);
 	//lcd.print(" ");
 	//lcd.print(tgtY);
-	
+
 		Serial.print("try moving to ");
 		Serial.print(tgtX);
 		Serial.print(" ");
@@ -218,12 +219,12 @@ ISR(TIMER3_COMPA_vect)
 			if (currentPositionX == targetX)
 			{
 				//digitalWrite(steppery.pinPUL, HIGH);
-				PORTB |= (1<< PORTB7);
+				PORTB |= (1<< PORTB5);
 			}
 			else
 			{
 				//digitalWrite(stepperx.pinPUL, HIGH);
-				PORTB |= (1 << PORTB5);
+				PORTB |= (1 << PORTB7);
 			}
 
 		}
@@ -273,8 +274,8 @@ void loop()
 	START:
 	//manualControl();
 	
-	linearMoveTo(10, 5, 1);
-	linearMoveTo(0.0, 0.0, 1);
+	linearMoveTo(10, 5, 5);
+	linearMoveTo(0.0, 0.0, 5);
 //	linearMoveTo(0, 0.1, 5);
 //	linearMoveTo(0, 0, 5);
 	
@@ -330,21 +331,28 @@ void manualControl()
 
 //PE4(2)触发中断 
 ISR(INT4_vect) {
+	cli();
+	Serial.println("X limit triggered, X position reset.");
 	currentPositionX = 0;
 	currentPositionY = 0;
 	targetX = 0;
 	targetY = 0;
-	linearMoveTo(10, 0, 5);
+	sei();
+	linearMoveTo(10,0,3);
+/*
 	currentPositionX = 0;
 	currentPositionY = 0;
 	targetX = 0;
 	targetY = 0;
 	Serial.println("X limit triggered, X position reset.");
-	loop();
-
+*/	
+	//delay(1000);
+	//loop();
 }
 //PE5(3)触发中断 
+
 ISR(INT5_vect) {
+
 }
 
 void FindZero() {
